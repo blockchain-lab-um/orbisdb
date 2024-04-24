@@ -1,0 +1,22 @@
+{
+  "id": "masca",
+  "name": "Masca",
+  "logo": "/img/gitcoin-passport-logo.png",
+  "description": "Add a way to check for valid credentials in your app.",
+  "full_description": "This is a plugin that allows you to filter verifiable credentials based on issuer & credential schema.",
+  "hooks": ["validate"],
+  "variables": [
+    {
+      "name": "Credential Issuer",
+      "description": "The credential issuer required for this context.",
+      "per_context": true,
+      "id": "issuer"
+    },
+    {
+      "name": "Credential Schema URL",
+      "description": "URL of the credential schema.",
+      "per_context": true,
+      "id": "schema"
+    }
+  ]
+}
